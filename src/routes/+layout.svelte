@@ -1,0 +1,55 @@
+<script>
+	import '../app.css';
+</script>
+
+<div id="body" class="flex flex-col justify-center">
+	<header class="w-full mt-4">
+		<a
+			href="/"
+			class="w-fit mx-auto p-4 flex flex-row content-center rounded-lg shadow bg-slate-600 dark:bg-slate-700"
+		>
+			<h1 class="text-2xl text-center text-white dark:text-white w-full">MISCHBROT UND BEATS</h1>
+		</a>
+	</header>
+	<div id="main" class="bg-slate-800 dark:bg-slate-950 flex flex-col">
+		<section class="flex flex-col items-center">
+			<slot />
+		</section>
+	</div>
+	<footer class="">
+		<div
+			class="w-fit mx-auto p-4 flex flex-row content-center bg-slate-600 rounded-lg shadow-lg m-4 dark:bg-slate-700"
+		>
+			<span class="text-sm text-white dark:text-white md:min-w-fit sm:min-w-[300px] max-w-fit"
+				>© 2023 <a href="https://www.mischbrot-und-beats.de/" class="hover:underline"
+					>Mischbrot und Beats™</a
+				>. All Rights Reserved.
+			</span>
+			<ul
+				class="flex flex-wrap content-center w-full justify-end text-sm font-medium text-gray-500 dark:text-gray-400 pl-4"
+			>
+				<li>
+					<a
+						href="https://archiv-potsdam.de/"
+						target="__blank"
+						class="basis-1/4 shrink-0 mr-4 hover:underline hover:text-white">Archiv</a
+					>
+				</li>
+				<li>
+					<a
+						href="https://www.google.com/"
+						class="basis-1/4 shrink-0 mr-4 hover:underline hover:text-white">Telegram</a
+					>
+				</li>
+				<li>
+					<a href="/Kontakt" class="basis-1/4 shrink-0 hover:underline hover:text-white mr-4"
+						>Kontakt</a
+					>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</div>
+
+<style>
+</style>
